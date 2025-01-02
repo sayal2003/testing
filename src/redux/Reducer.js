@@ -25,7 +25,7 @@ const userReducer = (state = initialState, action) => {
                     data: filterData
                 }
                 case "USER_EDIT":   
-                // console.log(filterData, "filterdata===========>");
+                // console.log(editObj, "finddata===========>");
                 const editObj = state.data.find((item, index) => index === action.payload) 
                     return {
                         ...state,
